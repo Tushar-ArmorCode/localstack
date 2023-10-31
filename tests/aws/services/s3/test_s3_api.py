@@ -12,7 +12,7 @@ from localstack.utils.strings import long_uid, short_uid
 
 
 def is_legacy_v2_provider():
-    return not config.LEGACY_V2_S3_PROVIDER
+    return config.LEGACY_V2_S3_PROVIDER
 
 
 @markers.snapshot.skip_snapshot_verify(
